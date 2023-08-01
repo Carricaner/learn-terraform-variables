@@ -2,21 +2,19 @@
 # SPDX-License-Identifier: MPL-2.0
 
 terraform {
-
-  /* Uncomment this block to use Terraform Cloud for this tutorial
   cloud {
-      organization = "organization-name"
+      organization = "corgi-org"
       workspaces {
-        name = "learn-terraform-variables"
+        name = "learn-tf-variables"
       }
   }
-  */
+  
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.15.0"
+      version = "~> 4.16"
     }
   }
-  required_version = "~> 1.2.0"
+  required_version = ">= 1.2.0"
 }
 

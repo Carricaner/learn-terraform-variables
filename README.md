@@ -6,3 +6,10 @@ allow users to re-use and customize configuration by providing a consistent
 interface to change how a given configuration behaves.
 
 Follow along with this [Learn Terraform variables](https://developer.hashicorp.com/terraform/tutorials/configuration-language/variables) tutorial.
+
+
+
+## Some Notes
+
+* Terraform automatically loads all files in the current directory with the exact name `terraform.tfvars` or matching `*.auto.tfvars`.
+
